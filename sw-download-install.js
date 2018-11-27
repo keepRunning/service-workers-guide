@@ -1,7 +1,7 @@
 
 
 
-const VERSION = 'v3';
+const VERSION = 'v4';
 
 
 self.addEventListener('install', event => event.waitUntil(installServiceWorker()));
@@ -16,11 +16,11 @@ async function installServiceWorker() {
     return cache.addAll([
         '/',
         'carousel.css',
-        'http://getbootstrap.com/dist/css/bootstrap.min.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js',
         'https://code.jquery.com/jquery-3.2.1.slim.min.js',
-        'http://getbootstrap.com/assets/js/vendor/popper.min.js',
-        'http://getbootstrap.com/dist/js/bootstrap.min.js',
-        'http://getbootstrap.com/assets/js/vendor/holder.min.js'
+        'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js',
+        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js'
     ]);
 }
 
